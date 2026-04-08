@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DucMinh;
+using DucMinh.Attributes;
 using UnityEngine;
 
 namespace BussesAway
@@ -8,13 +9,12 @@ namespace BussesAway
     [Serializable]
     public class ColorData: ThreeProperties
     {
-        public ColorType colorType;
-        public Material characterMaterial;
+        public Color characterColor;
         public Material busMaterial;
     }
     
     public class BussesAwayConfig: BaseGameConfig<BussesAwayConfig>
     {
-        [SerializeField] List<ColorData> colorConfigs = new List<ColorData>();
+        [SerializeField, ElementName(typeof(ColorType))] List<Color> colorConfigs = new();
     }
 }
