@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da71ede287654fcca40020b08b928202, type: 3}
+  m_Name: UIConfig
+  m_EditorClassIdentifier: Assembly-CSharp::DucMinh.UIConfig
+  _uiConfigItems:
+  - UIType: 1
+    CanvasType: 0
+    Prefab: {fileID: 6579921636035869142, guid: f50abdfed3f6422469a921768849cb2e, type: 3}
+  - UIType: 2
+    CanvasType: 1
+    Prefab: {fileID: 7569619377196039070, guid: c43998121afe0334fac46d9b87191117, type: 3}

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229af7379c0e43c4fabfbd2ece51f207, type: 3}
+  m_Name: BuildConfigDatabase
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DucMinh.CustomBuild.BuildConfigDatabase
+  buildConfigs:
+  - buildType: 0
+    baseFileName: DoubleFarm
+    version: 1.0.0
+    buildNumber: 2
+    uploadToFirebase: 0
+    firebaseAppId: 
+    testerGroups: qa-team
+    releaseNoteContent: Bug fixes and improvements
+    enableNotifications: 0
+    notificationType: 0
+    discordWebhookUrl: 
+    telegramBotToken: 
+    telegramChatId: 
+  - buildType: 1
+    baseFileName: DoubleFarm
+    version: 1.0.0
+    buildNumber: 1
+    uploadToFirebase: 0
+    firebaseAppId: 
+    testerGroups: qa-team
+    releaseNoteContent: Bug fixes and improvements
+    enableNotifications: 0
+    notificationType: 0
+    discordWebhookUrl: 
+    telegramBotToken: 
+    telegramChatId: 
+  selectedConfigIndex: 0

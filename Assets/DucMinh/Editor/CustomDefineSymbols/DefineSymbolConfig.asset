@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9491c933a6f2dd42933999967549651, type: 3}
+  m_Name: DefineSymbolConfig
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DucMinh.DefineSymbolConfig
+  Symbols:
+  - DEBUG_MODE
+  - NEW_INPUT_SYSTEM
