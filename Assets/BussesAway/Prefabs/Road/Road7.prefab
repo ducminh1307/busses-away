@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1192755970679111580, guid: 06cff45146de0f34fa1d60815f1e05a5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 84033ea3169c87342858188bb32efdbf, type: 2}
+    - target: {fileID: 1192755970679111580, guid: 06cff45146de0f34fa1d60815f1e05a5, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3d22c7438adc0a4481aa743dc575755, type: 2}
     - target: {fileID: 8721822462278002538, guid: 06cff45146de0f34fa1d60815f1e05a5, type: 3}
       propertyPath: m_Name
       value: Road7

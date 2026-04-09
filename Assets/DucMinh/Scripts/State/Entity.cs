@@ -5,7 +5,7 @@ namespace DucMinh
 {
     public abstract class Entity<TStateEnum> : MonoBehaviour where TStateEnum : Enum
     {
-        public AnimationAdapter AnimationAdapter { get; private set; }
+        public AnimationAdapter AnimationAdapter { get; protected set; }
         protected StateMachine StateMachine;
         protected StateFactory<TStateEnum> StateFactory;
 
@@ -14,7 +14,6 @@ namespace DucMinh
         protected virtual void Awake()
         {
             StateMachine = new StateMachine();
-            AnimationAdapter = AnimationAdapter.Create(gameObject);
         }
 
         protected virtual void Start()
@@ -42,5 +41,13 @@ namespace DucMinh
                 StateMachine.ChangeState(newState);
             }
         }
+
+#if DEBUG_MODE
+        [Button]
+        protected void TestState(TStateEnum stateID)
+        {
+            ChangeState(stateID);
+        }
+#endif
     }
 }

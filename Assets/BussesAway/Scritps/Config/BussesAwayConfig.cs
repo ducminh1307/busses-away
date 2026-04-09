@@ -6,15 +6,17 @@ using UnityEngine;
 
 namespace BussesAway
 {
-    [Serializable]
-    public class ColorData: ThreeProperties
-    {
-        public Color characterColor;
-        public Material busMaterial;
-    }
-    
     public class BussesAwayConfig: BaseGameConfig<BussesAwayConfig>
     {
+        [Header("Color Configs")]
         [SerializeField, ElementName(typeof(ColorType))] List<Color> colorConfigs = new();
+        
+        [Header("Prefab Configs")]
+        
+        [SerializeField] GameObject passengerPrefab;
+        public static GameObject PassengerPrefab => Instance.passengerPrefab;
+        
+        [SerializeField] GameObject busPrefab;
+        public static GameObject BusPrefab => Instance.busPrefab;
     }
 }
